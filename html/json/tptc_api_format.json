@@ -1,0 +1,225 @@
+{
+    "odpt:PassengerSurvey": {
+        "parameters": [
+            "@id"
+            ,"odpt:operator"
+            ,"odpt:station"
+            ,"odpt:railway"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.1",
+        "explanation": "駅の乗降人員数を取得する"
+    },
+    "odpt:RailDirection": {
+        "parameters":[
+            "@id"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.2",
+        "explanation": "進行方向を取得する"
+    },
+    "odpt:Railway": {
+        "parameters":[
+            "@id"
+            ,"dc:title"
+            ,"odpt:lineCode"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.3",
+        "explanation": "路線情報を取得する"
+    },
+    "odpt:RailwayFare": {
+        "parameters":[
+            "@id"
+            ,"odpt:fromStation"
+            ,"odpt:operator"
+            ,"odpt:toStation"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.4",
+        "explanation": "２駅間の運賃を取得する"
+    },
+    "odpt:Station": {
+        "parameters":[
+            "@id"
+            ,"dc:title"
+            ,"odpt:operator"
+            ,"odpt:railway"
+            ,"odpt:stationCode"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.5",
+        "explanation": "駅情報を取得する"
+    },
+    "odpt:StationTimetable": {
+        "parameters":[
+            "@id"
+            ,"dc:date"
+            ,"odpt:calendar"
+            ,"odpt:operator"
+            ,"odpt:railDirection"
+            ,"odpt:railway"
+            ,"odpt:station"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.6",
+        "explanation": "駅時刻表を取得する"
+    },
+    "odpt:Train": {
+        "parameters":[
+            "odpt:operator"
+            ,"odpt:railway"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.7",
+        "explanation": "列車情報（列車の位置情報）を取得する"
+    },
+    "odpt:TrainInformation": {
+        "parameters":[
+            "odpt:operator"
+            ,"odpt:railway"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.8",
+        "explanation": "列車運行情報を取得する"
+    },
+    "odpt:TrainTimetable": {
+        "parameters":[
+            "@id"
+            ,"odpt:calendar"
+            ,"odpt:operator"
+            ,"odpt:railway"
+            ,"odpt:train"
+            ,"odpt:trainNumber"
+            ,"odpt:trainType"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.9",
+        "explanation": "列車時刻表を取得する"
+    },
+    "odpt:TrainType": {
+        "parameters":[
+            "@id"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "3.2.10",
+        "explanation": "列車種別を取得する"
+    },
+    "odpt:Bus": {
+        "parameters": [
+            "@id"
+            ,"odpt:busroutePattern"
+            ,"odpt:fromBusstopPole"
+            ,"odpt:operator"
+            ,"odpt:toBusstopPole"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "4.2.1",
+        "explanation": "バス車両の運行情報を取得する"
+    },
+    "odpt:BusTimetable": {
+        "parameters": [
+            "@id"
+            ,"dc:title"
+            ,"odpt:busroutePattern"
+            ,"odpt:calendar"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "4.2.2",
+        "explanation": "バス時刻表を取得する"
+    },
+    "odpt:BusroutePattern": {
+        "parameters": [
+            "@id"
+            ,"dc:title"
+            ,"odpt:busroute"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "4.2.3",
+        "explanation": "運行系統情報を取得する"
+    },
+    "odpt:BusroutePatternFare": {
+        "parameters": [
+            "@id"
+            ,"odpt:childIcCardFare"
+            ,"odpt:childTicketFare"
+            ,"odpt:fromBusstopPole"
+            ,"odpt:icCardFare"
+            ,"odpt:operator"
+            ,"odpt:ticketFare"
+            ,"odpt:toBusstopPole"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "4.2.4",
+        "explanation": "運賃情報を取得する"
+    },
+    "odpt:BusstopPole": {
+        "parameters": [
+            "@id"
+            ,"dc:title"
+            ,"odpt:busroutePattern"
+            ,"odpt:busstopPoleNumber"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "4.2.5",
+        "explanation": "バス停を取得する"
+    },
+    "odpt:BusstopPoleTimetable": {
+        "parameters": [
+            "@id"
+            ,"dc:date"
+            ,"odpt:busDirection"
+            ,"odpt:busroute"
+            ,"odpt:busstopPole"
+            ,"odpt:calendar"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "4.2.6",
+        "explanation": "バス停時刻表を取得する"
+    },
+    "odpt:FlightInformationArrival": {
+        "parameters": [
+            "odpt:airline"
+            ,"odpt:baggageClaim"
+            ,"odpt:departureAirport"
+            ,"odpt:destinationAirport"
+            ,"odpt:flightNumber"
+            ,"odpt:flightStatus"
+            ,"odpt:gate"
+            ,"odpt:terminal"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "5.2.1",
+        "explanation": "フライト到着情報は、空港に当日到着する航空機のリアルタイムな情報を示す。"
+    },
+    "odpt:FlightInformationDeparture": {
+        "parameters": [
+            "odpt:airline"
+            ,"odpt:departureAirport"
+            ,"odpt:destinationAirport"
+            ,"odpt:flightNumber"
+            ,"odpt:flightStatus"
+            ,"odpt:gate"
+            ,"odpt:terminal"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "5.2.2",
+        "explanation": "フライト出発情報は、空港を当日出発する航空機のリアルタイムな情報を示す。"
+    },
+    "odpt:FlightSchedule": {
+        "parameters": [
+            "odpt:airport"
+            ,"odpt:calender"
+            ,"odpt:operator"
+            ,"owl:sameAs"
+        ],
+        "api_documnet_number": "5.2.3",
+        "explanation": "空港時刻表は、空港を発着する航空機の予定時刻表を示す"
+    }
+}
